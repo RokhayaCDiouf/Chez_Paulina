@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chez Paulina – Petit restaurant convivial en bord de mer, spécialisé dans les fruits de mer et poissons frais.">
+    <title>Chez Paulina | Fruits de Mer & Poissons</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🐚</span>
+                <span class="logo-text">Chez Paulina</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link" data-i18n="nav_home">Accueil</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">Notre Histoire</a></li>
+                    <li><a href="#menu" class="nav-link" data-i18n="nav_menu">La Carte</a></li>
+                    <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Avis</a></li>
+                    <li><a href="#footer" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr" id="btn-fr">FR</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en" id="btn-en">EN</button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="assets/hero.jpg" alt="Terrasse de Chez Paulina en bord de mer" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-tag" data-i18n="hero_tag">✦ Bord de mer depuis 2017 ✦</p>
+                    <h1 class="hero-title" data-i18n="hero_title">Chez Paulina</h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">Fruits de mer frais, poissons du jour et saveurs iodées dans un cadre convivial face à l'ocean.</p>
+                    <div class="hero-btns">
+                        <a href="#menu" class="btn btn-primary" data-i18n="hero_btn">Voir la Carte</a>
+                        <a href="#about" class="btn btn-outline" data-i18n="hero_btn2">Notre Histoire</a>
+                    </div>
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <span class="badge-icon">🦞</span>
+                            <span class="badge-label" data-i18n="badge_seafood">Fruits de Mer</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">🐟</span>
+                            <span class="badge-label" data-i18n="badge_fish">Poissons Frais</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">🌊</span>
+                            <span class="badge-label" data-i18n="badge_sea">Vue sur Mer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f4ed"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section" id="about">
+            <div class="container about-container">
+                <div class="about-text">
+                    <p class="section-label" data-i18n="about_label">Notre Histoire</p>
+                    <h2 class="section-title" data-i18n="about_title">Une table les pieds dans l'eau</h2>
+                    <p class="about-desc" data-i18n="about_desc1">Depuis 2015, Paulina accueille Touristes, familles et amoureux de la bonne cuisine autour d'une même table : celle du bord de mer. Son secret ? Des produits ultra-frais débarqués chaque matin du port voisin, et une cuisine généreuse qui sent bon l'iode et le soleil.</p>
+                    <p class="about-desc" data-i18n="about_desc2">Ici, pas de chichi. Juste des ecaillées généreuses, des plateaux débordants, et l'accent du Midi qui fait chanter les saveurs. Bienvenue à la bonne adresse !</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-i18n="stat_years">ans de passion</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-i18n="stat_fresh">produits frais</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">⭐ 4.8</span>
+                            <span class="stat-label" data-i18n="stat_rating">note client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-img-frame">
+                        <div class="about-img-card card1">🦑 Calamars sautés</div>
+                        <div class="about-img-card card2">🦐 Gambas Grillées</div>
+                        <div class="about-img-card card3">🐙 Poulpe à la Plancha</div>
+                        <div class="about-sea-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" data-i18n="menu_label">La Carte</p>
+                    <h2 class="section-title" data-i18n="menu_title">Nos Spécialités de la Mer</h2>
+                    <p class="section-desc" data-i18n="menu_desc">Pêche du jour, arrivage direct du port — fraîcheur garantie à chaque bouchée.</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="menu-tabs" id="menu-tabs">
+                    <button class="tab-btn active" data-cat="all" data-i18n="tab_all">Tout</button>
+                    <button class="tab-btn" data-cat="cat_plats" data-i18n="tab_plats">Plats</button>
+                    <button class="tab-btn" data-cat="cat_grillades" data-i18n="tab_grillades">Grillades</button>
+                    <button class="tab-btn" data-cat="cat_fruits_de_mer" data-i18n="tab_fruits_de_mer">Fruits de Mer</button>
+                    <button class="tab-btn" data-cat="cat_menus" data-i18n="tab_menus">Menus</button>
+                    <button class="tab-btn" data-cat="cat_desserts" data-i18n="tab_desserts">Desserts</button>
+                    <button class="tab-btn" data-cat="cat_boissons" data-i18n="tab_boissons">Boissons</button>
+                </div>
+
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Menu items populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section section" id="reviews">
+            <div class="reviews-bg-wave">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,40 C360,0 1080,80 1440,40 L1440,0 L0,0 Z" fill="#f8f4ed"/>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" data-i18n="reviews_label">Témoignages</p>
+                    <h2 class="section-title" data-i18n="reviews_title">Ce qu'ils en disent</h2>
+                </div>
+
+                <div class="reviews-container" id="reviews-container">
+                    <!-- Reviews populated by JS -->
+                </div>
+            </div>
+            <div class="reviews-bg-wave bottom">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f4ed"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- CTA / Reservation Banner -->
+        <section class="cta-section section" id="reservation">
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <p class="section-label" data-i18n="cta_label">Réservation</p>
+                    <h2 class="cta-title" data-i18n="cta_title">Venez partager un plateau !</h2>
+                    <p class="cta-desc" data-i18n="cta_desc">Réservez votre table et profitez de la vue sur mer en dégustant nos fruits de mer du jour.</p>
+                    <a href="tel:+33412345678" class="btn btn-primary cta-btn">
+                        <span>📞</span>
+                        <span data-i18n="cta_btn">Réserver par téléphone</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location / Map Section -->
+        <section class="map-section section" id="location">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label" data-i18n="map_label">Où nous trouver</p>
+                    <h2 class="section-title" data-i18n="map_title">Chez Paulina à Saly</h2>
+                    <p class="section-desc" data-i18n="map_desc">En bord de mer à Saly Portudal, près de la résidence du port — Sénégal.</p>
+                </div>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://maps.google.com/maps?q=14.43728,-17.00291&z=16&output=embed"
+                        width="100%"
+                        height="420"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Chez Paulina sur Google Maps">
+                    </iframe>
+                    <a class="map-cta-btn" href="https://www.google.com/maps?q=14.43728,-17.00291" target="_blank" rel="noopener">
+                        <span>📍</span>
+                        <span data-i18n="map_open">Ouvrir dans Google Maps</span>
+                    </a>
+            </div>
+        </section>
+
+        <!-- Scam Alert Section -->
+        <section class="scam-alert-section">
+            <div class="container">
+                <div class="scam-alert-box">
+                    <div class="scam-icon">⚠️</div>
+                    <div class="scam-text">
+                        <h3 data-i18n="alert_title">Avis Important à notre clientèle</h3>
+                        <p data-i18n="alert_desc">Nous tenons à vous informer que <strong>Chez Paulina gère exclusivement les services de restauration</strong>. Nous n'avons aucune affiliation avec des vendeurs d'antiquités ou d'autres commerces locaux. Toute personne se présentant comme un membre de notre famille (tel qu'un "frère de Paulina") pour vendre des objets en dehors du restaurant est un imposteur. Soyez vigilants !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">🐚 Chez Paulina</h3>
+                <p class="footer-text" data-i18n="footer_desc">Fruits de mer & poissons frais en bord de mer, dans une ambiance conviviale et ensoleillée.</p>
+                <p class="footer-tagline" data-i18n="footer_tagline">"La mer dans votre assiette 🌊"</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title" data-i18n="footer_contact">Nous Trouver</h4>
+                <ul class="footer-links">
+                    <li>📞 <a href="tel:+221774173242">+221 77 417 32 42</a></li>
+                    <li>📧 <a href="mailto:paulinefayediouf@gmail.com">paulinefayediouf@gmail.com</a></li>
+                    <li>📍 <a href="https://www.google.com/maps?q=14.43728,-17.00291" target="_blank" rel="noopener" data-i18n="footer_address">Saly Portudal, près de la résidence du port</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title" data-i18n="footer_hours">Horaires d'Ouverture</h4>
+                <ul class="footer-links">
+                    <li data-i18n="hours_lunch">Déjeuner : 12h00 – 14h30</li>
+                    <li data-i18n="hours_dinner">Dîner : sous reservation</li>
+                    <li data-i18n="hours_closed">Nous n'acceptons pas les intermediaires, les reservations se font dirctement vers chez nous</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title" data-i18n="footer_specialties">Nos Spécialités</h4>
+                <ul class="footer-links specialties">
+                    <li>🦪 Huîtres & Coquillages</li>
+                    <li>🦞 Homard & Langoustes</li>
+                    <li>🐟 Poissons du Jour</li>
+                    <li>🦐 Gambas & Crevettes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Chez Paulina. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
